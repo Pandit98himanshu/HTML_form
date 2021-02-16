@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<form action="" id="questions" method="post" name="questions">
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" pattern="[A-Za-z]{10}" required aria-required="true">
+	<br>
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" multiple>
+		<p>You can put multiple email addresses by separating with ,</p>
+		<label for="url">Website</label>
+		<input type="url" name="url" readonly>
+	<br>
+		<label for="number">Salary(LPA)</label>
+		<input type="number" name="number" id="number" min="1" max="100" hidden="">
+	<br>
+		<label for="birthday">Date of Birth</label>
+		<input type="date" name="birthday" id="birthday" min="2017-01-01" max="2017-12-31">
+	<br>	
+		<label for="time">Time</label>
+		<input type="time" name="time" id="time" step="1800" disabled>
+
+<!-- Checkbox -->
+		<p>What is your favorite color?</p>
+		<input type="radio" name="favcolor" value="blue">
+		<label for="blue">Blue</label><br>
+		<input type="radio" name="favcolor" value="yellow">
+		<label for="yellow">Yellow</label><br>
+		<input type="radio" name="favcolor" value="black" checked>
+		<label for="black">Black</label><br>
+		<input type="radio" name="favcolor" value="green">
+		<label for="green">Green</label><br>
+
+<!-- Multiple selection : Radio button -->	
+		<fieldset>
+			<legend>What are your favorite pizza toppings?</legend>
+			<input type="checkbox" name="pizza" value="onion">
+			<label for="blue">Onion</label><br>
+			<input type="checkbox" name="pizza" value="sweetcorn">
+			<label for="yellow">Sweet Corn</label><br>
+			<input type="checkbox" name="pizza" value="olive">
+			<label for="black">Olive</label><br>
+			<input type="checkbox" name="pizza" value="capsicum">
+			<label for="green">Capsicum</label><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Name</legend>
+			<input type="text" name="name" placeholder="Enter your name">
+			<br>
+		</fieldset>
+
+<!-- Dropdown -->
+		<label for="pizza">What are your favorite pizza toppings?</label>
+		<select name="pizza" id="pizza">
+			<optgroup label="Veggies">
+				<option value="onion">Onion</option>
+				<option value="sweetcorn">Sweet Corn</option>
+				<option value="capsicum">Capsicum</option>
+				<option value="mushroon">Mushroom</option>
+			</optgroup>
+			<optgroup label="Meat">
+				<option value="sausage">Sausage</option>
+				<option value="peepeeroni">Peepeeroni</option>
+			</optgroup>
+		</select>
+		<br>
+
+<!-- Long statement -->
+		<label for="about">Tell us about yourself</label>
+		<textarea id="about" name="about"></textarea>
+		<br>
+
+<!-- Color Picker -->
+		<label for="colorpicker">Pick favorite color</label>
+		<input type="color" name="color" id="color">
+		<br>
+
+<!-- Upload file -->
+		<label for="resume">Upload your resume</label>
+		<input type="file" name="resume" id="resume" multiple accept="image/*">
+		<br>
+
+<!-- Password -->
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password">
+		<input type="hidden" value="1234" value="tracking">
+		<br>
+
+<!-- Slider : Range -->
+		<label for="watchprice">What is price of your watch?</label>
+		<input type="range" min="100" max="50000" step="50" id="watchprice">
+		<br>
+
+<!-- Search -->
+		<label for="search">Search</label>
+		<input type="search" name="search" id="search">
+		<br>
+
+	<br>
+		<input type="reset" value="Reset">
+		<input type="submit" value="Submit answers">
+		<input type="button" value="Custom button">
+		<button type="sumbit">Place Order</button>
+		<input type="image" src="https://tinyurl.com/1bb4lsyi" alt="wantme" width="2">
+	</form>
+</body>
+</html>

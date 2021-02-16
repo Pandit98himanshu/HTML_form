@@ -1,0 +1,46 @@
+button, input, textarea, select {
+	font-family: inherit;
+	font-size: 100%;
+	width: 150px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*
+input[type="text"], input[type="url"], input[type="email"], 
+input[type="tel"], input[type="password"], input[type="search"], 
+input[type="number"], input[type="date"], input[type="time"], textarea {
+	font-size: 1em;
+	color: red;
+	margin: 5px 5px 5px 5px;
+	border-radius: 7px;
+	background-color: #fdedec;
+}
+*/
+textarea {
+	vertical-align: middle;
+}
+
+input[type="checkbox"] {
+	opacity: 0;
+	width: 0;
+	margin: 0;
+}
+input[type="checkbox"]+ label {
+	border: 20x solid #138d75;
+	background-color: #e9f7ef;
+	padding: 4px 10px;
+	border-radius: 7px;
+	display: inline-block;
+	width: 4em;
+	text-align: center;
+}
+input[type="checkbox"]:checked + label {
+	border-color: #a93226;
+	background-color: #15cba7;
+	font-weight: bold;
+	padding: 4px 10px;
+	border-radius: 7px;
+	display: inline-block;
+	width: 4em;
+	text-align: center;
+}
